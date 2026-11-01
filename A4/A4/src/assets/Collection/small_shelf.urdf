@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<robot name="wooden_stand">
+
+  <link name="stand_link">
+
+    <!-- Four legs -->
+    <visual>
+      <origin xyz="0.18 0.18 0.20" rpy="0 0 0"/>
+      <geometry><box size="0.04 0.04 0.40"/></geometry>
+      <material name="wood"><color rgba="0.72 0.52 0.04 1.0"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0.18 0.18 0.20" rpy="0 0 0"/>
+      <geometry><box size="0.04 0.04 0.40"/></geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="-0.18 0.18 0.20" rpy="0 0 0"/>
+      <geometry><box size="0.04 0.04 0.40"/></geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.18 0.18 0.20" rpy="0 0 0"/>
+      <geometry><box size="0.04 0.04 0.40"/></geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0.18 -0.18 0.20" rpy="0 0 0"/>
+      <geometry><box size="0.04 0.04 0.40"/></geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="0.18 -0.18 0.20" rpy="0 0 0"/>
+      <geometry><box size="0.04 0.04 0.40"/></geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="-0.18 -0.18 0.20" rpy="0 0 0"/>
+      <geometry><box size="0.04 0.04 0.40"/></geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.18 -0.18 0.20" rpy="0 0 0"/>
+      <geometry><box size="0.04 0.04 0.40"/></geometry>
+    </collision>
+
+    <!-- Top bars along X -->
+    <visual>
+      <origin xyz="0.0 -0.15 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.40 0.02 0.02"/></geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 -0.15 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.40 0.02 0.02"/></geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0.0 -0.05 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.40 0.02 0.02"/></geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 -0.05 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.40 0.02 0.02"/></geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0.0 0.05 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.40 0.02 0.02"/></geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.05 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.40 0.02 0.02"/></geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0.0 0.15 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.40 0.02 0.02"/></geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.15 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.40 0.02 0.02"/></geometry>
+    </collision>
+
+    <!-- Top bars along Y -->
+    <visual>
+      <origin xyz="-0.15 0.0 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.02 0.40 0.02"/></geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.15 0.0 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.02 0.40 0.02"/></geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="-0.05 0.0 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.02 0.40 0.02"/></geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.05 0.0 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.02 0.40 0.02"/></geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0.05 0.0 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.02 0.40 0.02"/></geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="0.05 0.0 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.02 0.40 0.02"/></geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0.15 0.0 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.02 0.40 0.02"/></geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="0.15 0.0 0.40" rpy="0 0 0"/>
+      <geometry><box size="0.02 0.40 0.02"/></geometry>
+    </collision>
+
+    <!-- Inertial properties for the whole stand -->
+    <inertial>
+      <origin xyz="0 0 0.20" rpy="0 0 0"/>
+      <mass value="5.0"/> <!-- total mass in kg -->
+      <inertia ixx="0.2" iyy="0.2" izz="0.2" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+
+  </link>
+
+</robot>

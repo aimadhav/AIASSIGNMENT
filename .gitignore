@@ -1,0 +1,16 @@
+# Publish only the assignment and its reproducible test driver.
+/*
+!/.gitignore
+!/README.md
+!/A4/
+/A4/*
+!/A4/A4/
+/A4/A4/*
+!/A4/A4/a4_2026.yml
+!/A4/A4/src/
+!/A4/A4/src/**
+!/scripts/
+/scripts/*
+!/scripts/test_assignment.py
+**/__pycache__/
+**/*.py[cod]
